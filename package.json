@@ -3,11 +3,11 @@
   "private": true,
   "description": "Личный проект «{{projectTitle}}» от HTML Academy",
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "1.0.0",
+    "@htmlacademy/editorconfig-cli": "^2.0.8",
     "@linthtml/linthtml": "^0.9.5",
     "linthtml-config-htmlacademy": "^1.0.14",
-    "stylelint": "^13.13.1",
-    "stylelint-config-htmlacademy": "^0.1.12"
+    "stylelint": "^16.2.0",
+    "stylelint-config-htmlacademy": "^4.0.3"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",
