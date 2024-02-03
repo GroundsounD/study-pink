@@ -410,6 +410,7 @@ template {
 .main-nav__toggle {
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 .download-app {
   background-color: #1d2631;
@@ -580,6 +581,7 @@ template {
 }
 .rates__wrapper {
   margin-top: 83px;
+  overflow: hidden;
 }
 .rates__advantage-headers-list {
   display: flex;
@@ -598,8 +600,10 @@ template {
   flex-direction: column;
   align-items: center;
   color: #ffffff;
+  border-right: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
 }
-.rates__rate-header--hit::after {
+.rates__rate-header--hit::before {
   content: "";
   background-image: url("/img/hit.svg");
   width: 74px;
@@ -607,6 +611,15 @@ template {
   position: absolute;
   top: 0;
   left: 22px;
+}
+.rates__rate-header--hit::after {
+  content: "ХИТ";
+  width: 27px;
+  height: 10px;
+  position: absolute;
+  top: 20px;
+  left: 35px;
+  transform: rotateZ(315deg);
 }
 .rates__rate-name {
   text-transform: uppercase;
@@ -696,5 +709,98 @@ template {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.contacts__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 50px;
+}
+.contacts__slogan {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 300;
+  color: #283645;
+  margin: 0;
+}
+.contacts__phone {
+  margin-top: 45px;
+}
+.contacts__phone-callback,
+.contacts__mail-callback,
+.contacts__address-callback {
+  font-weight: 700;
+  text-align: center;
+  font-size: 18px;
+  color: #283645;
+}
+.contacts__phone-number,
+.contacts__mail-address,
+.contacts__exact-address {
+  display: block;
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+  color: #d22856;
+  text-decoration: none;
+}
+.contacts__mail {
+  margin-top: 31px;
+}
+.contacts__address {
+  margin-top: 35px;
+}
+.contacts__map {
+  margin-top: 41px;
+  position: relative;
+}
+.contacts__map::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 160px solid transparent;
+  border-right: 160px solid transparent;
+  border-top: 10px solid #ffffff;
+}
+.page-footer__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.page-footer__logo {
+  display: block;
+  margin-top: 40px;
+  width: 145px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page-footer_socials {
+  margin-top: 40px;
+}
+.page-footer_socials-list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+.page-footer_social-item-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  outline: 3px solid rgba(40, 54, 69, 0.1);
+  border-radius: 50%;
+}
+.page-footer_developer {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  color: #283645;
 }
 /*# sourceMappingURL=style.css.map */

@@ -6,6 +6,7 @@
 
 .rates__wrapper {
   margin-top: 83px;
+  overflow: hidden;
 }
 
 .rates__advantage-headers-list {
@@ -26,9 +27,11 @@
   flex-direction: column;
   align-items: center;
   color: #ffffff;
+  border-right: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
 }
 
-.rates__rate-header--hit::after {
+.rates__rate-header--hit::before {
   content: "";
   background-image: url("/img/hit.svg");
   width: 74px;
@@ -36,6 +39,16 @@
   position: absolute;
   top: 0;
   left: 22px;
+}
+
+.rates__rate-header--hit::after {
+  content: "ХИТ";
+  width: 27px;
+  height: 10px;
+  position: absolute;
+  top: 20px;
+  left: 35px;
+  transform: rotateZ(315deg);
 }
 
 .rates__rate-name {
