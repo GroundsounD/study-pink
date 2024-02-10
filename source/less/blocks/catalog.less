@@ -30,6 +30,13 @@
   margin-bottom: 20px;
 }
 
+.catalog__item:last-of-type {
+  position: relative;
+  background-color: #f2f2f2;
+  margin-bottom: 0;
+}
+
+
 .catalog__photo--panorama {
   margin-left: -20px;
 }
@@ -109,4 +116,35 @@
   width: 13px;
   height: 12px;
   background-image: url("/img/heart.svg");
+}
+
+.catalog__likes--unliked {
+  margin-top: 15px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  color: #d22856;
+  font-size: 12px;
+  font-weight: 400;
+  background-color: transparent;
+  text-transform: uppercase;
+  height: 20px;
+  padding-left: 48px;
+  margin-bottom: 20px;
+}
+
+.catalog__likes--unliked::before {
+  content: "";
+  display: block;
+  position: absolute;
+  margin-left: -31px;
+  width: 13px;
+  height: 12px;
+  background-image: url("/img/heart.svg");
+  opacity: 0.5;
+}
+
+.catalog__photo {
+  object-fit: cover;
+  object-position: center;
 }
