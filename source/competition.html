@@ -70,44 +70,44 @@
                 <ul class="competition-form__achievments-list">
                   <li class="competition-form__achievments-item">
                     <label class="competition-form__achievments-item-control">
-                      <input class="visually-hidden control-input" type="checkbox" name="shark-selfie" checked>Сделал селфи с акулой
+                      <input class="visually-hidden control-input" type="checkbox" name="shark-selfie" checked>
                       <span class="control-mark"></span>
-                      <span class="control-label"></span>
+                      <span class="control-label">Сделал селфи с акулой</span>
                     </label>
                   </li>
                   <li class="competition-form__achievments-item">
                     <label class="competition-form__achievments-item-control">
-                      <input class="visually-hidden control-input" type="checkbox" name="burned" checked>Обгорел на пляже
+                      <input class="visually-hidden control-input" type="checkbox" name="burned" checked>
                       <span class="control-mark"></span>
-                      <span class="control-label"></span>
+                      <span class="control-label">Обгорел на пляже</span>
                     </label>
                   </li>
                   <li class="competition-form__achievments-item">
                     <label class="competition-form__achievments-item-control">
-                      <input class="visually-hidden control-input" type="checkbox" name="saw-chuck">Видел Чака Норриса
+                      <input class="visually-hidden control-input" type="checkbox" name="saw-chuck">
                       <span class="control-mark"></span>
-                      <span class="control-label"></span>
+                      <span class="control-label">Видел Чака Норриса</span>
                     </label>
                   </li>
                   <li class="competition-form__achievments-item">
                     <label class="competition-form__achievments-item-control">
-                      <input class="visually-hidden control-input" type="checkbox" name="souvenirs">Накупил сувениров
+                      <input class="visually-hidden control-input" type="checkbox" name="souvenirs">
                       <span class="control-mark"></span>
-                      <span class="control-label"></span>
+                      <span class="control-label">Накупил сувениров</span>
                     </label>
                   </li>
                   <li class="competition-form__achievments-item">
                     <label class="competition-form__achievments-item-control">
-                      <input class="visually-hidden control-input" type="checkbox" name="held-tower" checked>Удержал башню
+                      <input class="visually-hidden control-input" type="checkbox" name="held-tower" checked>
                       <span class="control-mark"></span>
-                      <span class="control-label"></span>
+                      <span class="control-label">Удержал башню</span>
                     </label>
                   </li>
                   <li class="competition-form__achievments-item">
                     <label class="competition-form__achievments-item-control">
-                      <input class="visually-hidden control-input" type="checkbox" name="destroyed-hotel">Разгромил отель
+                      <input class="visually-hidden control-input" type="checkbox" name="destroyed-hotel">
                       <span class="control-mark"></span>
-                      <span class="control-label"></span>
+                      <span class="control-label">Разгромил отель</span>
                     </label>
                   </li>
                 </ul>
@@ -115,7 +115,7 @@
           </div>
           <div class="competition-form__contacts">
             <fieldset class="competition-form__user-contacts">
-              <legend class="competition-form__contacts-title">Контактная информация</legend>
+              <legend class="competition-form__contacts-title"><span class="visually-hidden">Контактная информация</span></legend>
                 <label class="competition-form__user-phone" for="user-phone">Номер телефона</label>
                 <input class="competition-form__user-phone-form" type="text" id="user-phone" name="user-phone" placeholder="Номер, пожалуйста">
                 <label class="competition-form__user-email" for="user-email">Адрес почты</label>
@@ -128,23 +128,23 @@
                 <ul class="competition-form__app-list">
                   <li class="competition-form__app-item">
                       <label class="competition-form__app-control">
-                        <input class="visually-hidden control__input" type="radio" name="app-platform" value="iOS" checked>
-                        <span class="control__mark"></span>
-                        <span class="control__label">Pink для iOS</span>
+                        <input class="visually-hidden control-input" type="radio" name="app-platform" value="iOS" checked>
+                        <span class="control-mark--radio"></span>
+                        <span class="control-label--radio">Pink для iOS</span>
                       </label>
                   </li>
                   <li class="competition-form__app-item">
                     <label class="competition-form__app-control">
-                      <input class="visually-hidden control__input" type="radio" name="app-platform" value="Android">
-                      <span class="control__mark"></span>
-                      <span class="control__label">Pink на Android</span>
+                      <input class="visually-hidden control-input" type="radio" name="app-platform" value="Android">
+                      <span class="control-mark--radio"></span>
+                      <span class="control-label--radio">Pink на Android</span>
                     </label>
                   </li>
                   <li class="competition-form__app-item">
                     <label class="competition-form__app-control">
-                      <input class="visually-hidden control__input" type="radio" name="app-platform" value="Windows">
-                      <span class="control__mark"></span>
-                      <span class="control__label">Windows Phone</span>
+                      <input class="visually-hidden control-input" type="radio" name="app-platform" value="Windows">
+                      <span class="control-mark--radio"></span>
+                      <span class="control-label--radio">Windows Phone</span>
                     </label>
                   </li>
                 </ul>
@@ -153,12 +153,12 @@
           <div class="competition-form__emotions">
             <fieldset class="competition-form__user-emotions">
               <legend class="competition-form__emotions-title">Опишите свои эмоции</legend>
-              <textarea name="user-emotions" id="user-emotions" cols="10" rows="10">Можно прям в красках, не стесняясь в выражениях</textarea>
+              <textarea class="competition-form__emotions-textarea" name="user-emotions" id="user-emotions">Можно прям в красках, не стесняясь в выражениях</textarea>
             </fieldset>
           </div>
           <div class="competition-form__submit">
             <button class="competition-form__submit-button" type="submit">Отправить форму</button>
-            <p class="competition-form__rules">* - Обязательные поля</p>
+            <p class="competition-form__rules"><span>*</span> — Обязательные поля</p>
           </div>
         </form>
       </section>
@@ -215,19 +215,19 @@
     <div class="page-modal--failure">
       <div class="page-modal__wrapper">
         <section class="page-modal__failure-window">
-          <h2 class="page-modal-header">Что-то пошло не так!</h2>
+          <h2 class="page-modal__header">Что-то пошло не так!</h2>
           <p class="page-modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
         </section>
-        <button class="page-modal__failure-button" type="button">Ок</button>
+        <button class="page-modal__button" type="button">Ок</button>
       </div>
     </div>
     <div class="page-modal--success">
-      <div class="page-modal__wrapper">
-        <section class="page-modal__success-window">
-          <h2 class="page-modal-header">Ваша заявка отправлена</h2>
-          <p class="page-modal__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
-        </section>
-        <button class="page-modal__success-button" type="button">Закрыть окно</button>
+      <section class="page-modal__success-window">
+        <h2 class="page-modal__header">Ваша заявка отправлена</h2>
+        <p class="page-modal__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+      </section>
+      <div class="page-modal__success-button-wrapper">
+        <button class="page-modal__button" type="button">Закрыть окно</button>
       </div>
     </div>
   </body>

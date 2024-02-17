@@ -49,6 +49,36 @@ html {
   background-color: #ffffff;
   outline: 3px solid #283645;
 }
+.control-mark {
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 1px;
+  top: -7px;
+  left: -55px;
+}
+.control-mark--radio {
+  position: absolute;
+  width: 37px;
+  height: 37px;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 100%;
+  top: -7px;
+  left: -55px;
+}
+.control-input[type="checkbox"]:checked + .control-mark {
+  background-image: url("/img/check-mark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.control-input[type="radio"]:checked + .control-mark--radio {
+  background-image: url("/img/radio-check-mark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1088,7 +1118,8 @@ template {
   flex-direction: column;
   margin-bottom: 44px;
 }
-.competition-form__user-info label {
+.competition-form__user-info label,
+.competition-form__contacts label {
   margin-left: 43px;
   font-weight: 400;
   font-size: 14px;
@@ -1097,7 +1128,8 @@ template {
   margin-bottom: 17px;
   text-transform: uppercase;
 }
-.competition-form__user-info input {
+.competition-form__user-info input,
+.competition-form__contacts input {
   width: 254px;
   height: 59px;
   margin-bottom: 29px;
@@ -1112,6 +1144,7 @@ template {
 }
 .competition-form__achievments {
   background-color: #f2f2f2;
+  padding-bottom: 44px;
 }
 .competition-form__user-achievments {
   margin: 0;
@@ -1139,5 +1172,183 @@ template {
 }
 .competition-form__achievments-item-control {
   margin-left: 79px;
+  position: relative;
+}
+.competition-form__contacts {
+  padding: 42px 0 42px 0;
+}
+.competition-form__user-contacts {
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+.competition-form__app {
+  background: #f2f2f2;
+  padding-top: 42px;
+  padding-bottom: 42px;
+}
+.competition-form__user-app {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.competition-form__app-platform {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #d22856;
+  display: block;
+  max-width: 180px;
+  margin-bottom: 40px;
+}
+.competition-form__app-list {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  margin-left: 90px;
+}
+.competition-form__app-item {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+  margin-bottom: 38px;
+}
+.competition-form__app-item:last-of-type {
+  margin-bottom: 0;
+}
+.competition-form__app-control {
+  position: relative;
+}
+.competition-form__emotions {
+  padding-top: 42px;
+}
+.competition-form__user-emotions {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+.competition-form__emotions-title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #d22856;
+  display: block;
+  max-width: 185px;
+  margin-bottom: 40px;
+}
+.competition-form__emotions-textarea {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 22px;
+  display: block;
+  border: 2px solid #e5e5e5;
+  border-radius: 1px;
+  width: 232px;
+  height: 153px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+}
+.competition-form__submit {
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.competition-form__submit-button {
+  border: 2px solid #2aab6d;
+  background-color: #2aab6d;
+  border-radius: 1px;
+  width: 276px;
+  height: 59px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.competition-form__rules {
+  text-align: center;
+  margin-top: 44px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #283645;
+  margin-bottom: 66px;
+}
+.competition-form__rules span {
+  color: #d22856;
+}
+.page-modal--failure {
+  border-radius: 1px;
+  width: 320px;
+  height: 289px;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  background: #fff;
+  position: absolute;
+  top: 1335px;
+}
+.page-modal__wrapper {
+  padding: 20px;
+}
+.page-modal__header {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 37px;
+}
+.page-modal__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #283645;
+  margin-bottom: 50px;
+}
+.page-modal__button {
+  border: 2px solid #2aab6d;
+  background-color: #2aab6d;
+  border-radius: 1px;
+  width: 276px;
+  height: 59px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.page-modal--success {
+  border-radius: 1px;
+  width: 320px;
+  height: 380px;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  background: #fff;
+  position: absolute;
+  top: 1860px;
+  padding-top: 44px;
+}
+.page-modal--success .page-modal__text {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.page-modal__success-button-wrapper {
+  border-radius: 0 0 1px 1px;
+  width: 280px;
+  height: 163px;
+  background: #f2f2f2;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
